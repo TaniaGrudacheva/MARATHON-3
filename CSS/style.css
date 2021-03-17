@@ -26,8 +26,6 @@
   }
 
   body{
-/*    margin: 0;
-    padding: 0;*/
     /* Основной шрифт */
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -55,7 +53,6 @@
   .container{
     max-width: 1400px;
     width: 100%;
-/*    padding: 0;*/
     margin: 0 auto;
     box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
   }
@@ -63,7 +60,7 @@
   /* Header styles start */
   header{
     height: 510px;
-    background-color: rgb(238, 200, 162);
+    background-color: #efe6e4;
     background-image: url("../IMAGES/intro.png");
     background-repeat: no-repeat;
 /*    background-size: cover;*/
@@ -73,6 +70,9 @@
     padding-bottom: 168px;
   }  
 
+  .drop-shadow {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }      
   /* содержит logo и главное меню */
   /*
   .fixed-menu{
@@ -113,7 +113,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;	
-/*    margin: 0;*/
     list-style-type: none;
   }
 
@@ -131,11 +130,10 @@
     font-weight: bold;
   }
   
-  /* Header-Intro styles start */
+  /* Header - start section INTRO */
   .intro{
     width: 535px;
     min-width: 320px;
-/*    margin-top: 0px;*/
     margin-left: 84px;
   }
 
@@ -177,11 +175,11 @@
     transition: 0.3s;
 }
 */
-  /* Intro styles end */
+  /* end section INTRO */
 
-  /* About us styles start */
+  /* start section ABOUT US */
   .about-us{
-    background: #efe6e4;
+    background-color: #efe6e4;
     padding: 65px 182px 20px 182px;
   }    
 
@@ -209,178 +207,135 @@
   .about-us-text :first-child{
     margin-bottom: 30px;
   }
+  /* end section ABOUT US */
 
   /* start section RESULTS */
   .results {
-    background: #8D7370;
+    color: #FFFFFF;
+    background-color: #8D7370;
     padding: 85px 180px 80px 182px;
   }  
-  
-  .ul-about-us{
-    height: 273px;
-    background-color: #8D7370;
-  }
 
-  .div-ul-about-us{
-    height: 273px;
-    background-color: #8D7370;
-    margin: 0;
-  }
-
-  .ul-about-us{
+  .results-flex{
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    padding-top: 85px;
-    color: white;
-    padding-left: 180px;
-    padding-right: 180px;
-    margin: 0;
-    padding-top: 85px;
-    padding-bottom: 81px;
   }
 
-  .ul-about-us li{
-    font-size: 30px;
-    line-height: 37px;
-    font-weight: 500;
+  div.results-flex{
+    text-align: center;   
   }
-    
-  .ul-about-us span{
-    display: block;
+
+  .result-1 span {
+    font-style: normal;
+    font-weight: normal;
     font-size: 50px;
     line-height: 62px;
-    width: 100%;
-    text-align: center;
+    margin-bottom: 8px;
   }
-  
-  /* Abount us styles end */
 
-  /* Our works styles start */
+  .result-1 p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  /* end section RESULTS */
+
+  /* start section OUR WORK */
   .our-works{
-    background-color: #E5E5E5; 
-    height: 1230px;
-    margin: 0;
+    background-color: #efe6e4; 
+    padding: 57px 100px 76px 100px;
   }
 
-  .title-our-works {
-    margin-top: 0;
+  .our-works h2{
     margin-bottom: 40px;
-    font-size: 40px;
-    line-height: 50px;
-    color: #533738;
-    padding-top: 63px;
-    padding-left: 100px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
-  .ul-our-works{
-    width: 1200px;
+  
+  .our-works-ul{
     display: grid;
     grid-template-columns: 488px 1fr;
     column-gap: 20px;
     row-gap: 30px;
     grid-auto-flow: dense;
-    margin: 0px;
-    margin-bottom: 40px;
-    margin-left: 100px; /**/
-    padding-left: 0;
     list-style-type: none;    
+  }
+
+  .our-works-ul li{
+    position: relative;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
-  .photo3{
-    margin-right: 20px;
-      width: 692px;
-      height: 451px;
-      grid-column: 1 / 1;
-      grid-row: 2 / 2;    
-  }
-
-  .photo4{
-    /*    margin-right: 20px;*/
-          width: 488px;
-          height: 451px;
-          grid-column: 2 / 2;
-          grid-row: 2 / 2;    
-      }
   .our-work-photo{
-    position: relative;
+    width: 488px;
+    height: 451px;
   }
 
-  /* our works styles end */
-  .our-works a{
+  .our-work-photo-twin{
+    width: 692px;
+    height: 451px;
+  }
+/*
+  .our-work a{
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-
-  .our-works-more {
+*/
+  .our-works-more{
     width: 295px;
     text-align: center;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     transition: 0.3s;
-  }
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));   
+ } 
 
  .our-works-more a{
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 37px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
  }
+ 
+ /* end section OUR-WORKS */
 
- .our-works-more img{ 
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}  
- /* our works styles end */
+ /* start section OUR-TEAM */
+ .our-team{
+  padding: 50px 100px 80px 100px;
+  background-color: #E2C4BA;
+}
 
- /* Our team styles start */
- .title-our-team{
+ .our-team h2{
   text-align: center;
   margin-bottom: 40px;
-}
-
-.our-works-more{
-  margin-bottom: 72px;
-}
-
-.our-team{
-  padding-top: 50px;
-  background-color: #E2C4BA;
-/* margin-bottom: 40px;*/
 }
 
 .div-our-team{
   display: grid;
   grid-template-columns: 320px 320px 320px;
   column-gap: 38px;
-  margin-top: 0;
-  margin-left: 0;
   justify-content: center;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 }
 
 .div-out-team-1{
   width: 320;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 30px;
+}
+
+.katya p{
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.div-our-team-steps{
+.our-team-steps{
   display: grid;
   grid-template-columns: 285px 285px 285px 285px;
   column-gap: 38px;
-  margin-top: 20px;
   margin-left: 0;
-  padding-bottom: 84px;
   justify-content: center;
 }
 
-.our-team-step-1 span{
+.our-team-steps span{
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
@@ -394,43 +349,25 @@
   background-color: #8d7370;
   color: #fff;
   margin: auto;
-}
-
-.our-team-step-21 span{
-  display: block;
-  width: 70px;
-  height: 70px;
-  border: 1px solid white;
-  border-radius: 50%;
   margin-bottom: 20px;
-  color: white;
-  background-color: #8D7370;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 30px;
-  padding-top: 15px;
-  padding-left: 25px;
-  box-sizing: border-box;
-/*  text-align: center;  */
 }
 
-.our-team-step-1 p{
-  width: 285;
+.our-team-steps p{
   font-size: 18px;
   line-height: 30px;
   text-align: center;
 }
 
-/* our team styles end */
+/* end section OUR-TEAM */
 
-/* reviews styles start */
+/* start section REVIEW */
 .reviews {
   padding-top: 65px;
   padding-bottom: 65px;
   background: #efe6e4;
 }
 
-.title-reviews {
+.reviews h2{
   text-align: center;
   margin-bottom: 40px;
 }
@@ -438,7 +375,7 @@
 .review {
   display: flex;
   width: 1036px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .review-button {
@@ -447,31 +384,39 @@
   border: none;
   background-color: #efe6e4;
   align-self: center;
-  margin-right: 29px;
   transition: 0.3s;
   outline: none;
   border-radius: 50%;
 }
 
 .review-text {
-  margin-right: 20px;
   align-self: center;
 }
 
+.review>:first-child {
+  margin-right: 29px;
+}
+
+.review>:nth-child(2){
+  margin-right: 20px;
+}
+
+.review>:nth-child(3){
+  margin-right: 29px;
+}
+
 .review-text p {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #533738;
   margin-bottom: 30px;
 }
 
-.review-image:first-child {
-  margin-bottom: 25px;
+.rewiew-image{
+  width: 407px;
 }
-/* reviews styles end */
+.review-image:first-child {
+  margin-bottom: 24px;
+}
+
+/* end section REVIEW */
 
 /* callback styles start */
 .callback {
@@ -549,30 +494,21 @@ input {
 }
 /* callback styles end */
 
-/* footer styles start */
+/* start FOOTER */
 .page-footer {
   background: #efe6e4;
   padding: 37px 100px 37px 100px;
 }
 
-.contacts {
+.contacts{
   display: flex;
 }
 
-.contacts p {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #533738;
-}
-
-.contacts-phone {
+.contacts :first-child {
   margin-right: 42px;
 }
 
-.contacts-owner {
+.contacts :last-child {
   margin-left: auto;
 }
-/* footer styles end */
+/* end FOOTER */
