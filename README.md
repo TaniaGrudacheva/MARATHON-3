@@ -1,2 +1,1 @@
-# MARATHON-3
- Марафон по верстке
+MARATHON-3
