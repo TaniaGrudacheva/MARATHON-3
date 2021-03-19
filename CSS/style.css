@@ -467,7 +467,7 @@
 
 /* end section REVIEW */
 
-/* callback styles start */
+/* start section CALLBACK */
 .callback {
   background: #8d7370;
 }
@@ -485,34 +485,18 @@
   margin-right: 20px;
 }
 
-.callback-form h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 50px;
-  text-transform: uppercase;
+.callback-form h2 {
   color: #ffffff;
   margin-bottom: 25px;
 }
 
 .callback-form p {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
   color: #ffffff;
   opacity: 0.6;
   margin-bottom: 45px;
 }
 
 input {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
   color: #f6ede9;
   margin-bottom: 35px;
   outline: none;
@@ -521,27 +505,17 @@ input {
   border-bottom: 1px solid #ffffff;
 }
 
-.button {
-  width: 310px;
-  box-sizing: border-box;
-  display: block;
-  background: #cc8b86;
-  outline: none;
-  padding: 25px 65px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #533738;
-  border: none;
-  text-decoration: none;
-  transition: 0.3s;
+input::placeholder {
+  color: #F6EDE9;
 }
 
-.map {
-  margin-right: 100px;
+input:hover::placeholder {
+  color: #533738;
+
+  transition: color .2s linear;
 }
-/* callback styles end */
+
+/*end section CALLBACK */
 
 /* start FOOTER */
 .page-footer {
