@@ -21,42 +21,45 @@
                 </div>
                 <ul class="header-nav-ul">
                     <li class="header-nav-item">
-                        <a class="header-nav-a" href="#"></a>О компании</a>
+                        <a class="header-nav-a" href="#AboutUs">О компании</a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="header-nav-a" href="#">Портфолио</a>
+                        <a class="header-nav-a" href="#OurWorks">Портфолио</a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="header-nav-a" href="#">Команда</a>
+                        <a class="header-nav-a" href="#OurTeam">Команда</a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="header-nav-a" href="#">Как мы работаем</a>
+                        <a class="header-nav-a" href="#OurTeamSteps">Как мы работаем</a>
                     </li>  
                     <li class="header-nav-item">
-                        <a class="header-nav-a" href="#">Отзывы клиентов</a>
+                        <a class="header-nav-a" href="#Reviews">Отзывы клиентов</a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="header-nav-a" href="#">Оставить заявку</a>
+                        <a class="header-nav-a" href="#CallBack">Оставить заявку</a>
                     </li>
                     <li class="header-nav-item">
                         <a class="header-nav-a" href="#">+7 (981) 857-46-24</a>
                     </li>
                 </ul>
             </nav>         
-            <section class="intro">
+            <section class="intro" id="Intro">
                 <h1> Поможем сделать вашу квартиру уютнее</h1>
                 <p>Подбираем текстиль, мебель и аксессуары
                    под ваш интерьер, находим магазины
                    и помогаем организовать доставку 
                 </p>
-                <input class="intro-button" type="button" value="Оставить заявку">                
+                <a href="#CallBack">
+                    <button class="button">Оставить заявку</button>
+                </a>                
+<!--                <input class="intro-button" type="button" value="Оставить заявку">  -->              
             </section>   
         </header>
     </container>    
     <!-- MAIN -->
     <div class="container">
         <main class="main">
-            <section class="about-us">
+            <section class="about-us" id="AboutUs">
                 <h2>О НАС</h2>
                 <div class="about-us-flex">
                     <img class="about-us-img" src="IMAGES/about-us.png" alt="Премиальный европейский текстиль">
@@ -73,7 +76,7 @@
                     </div>
                 </div>
             </section>
-            <section class="results">    
+            <section class="results" Id="results">    
                 <div class="results-flex">
                     <div class="result-1">
                         <span>5</span><p>ЛЕТ ОПЫТА</p>
@@ -86,37 +89,59 @@
                     </div>    
                 </div>
             </section>
-            <section class="our-works">
+            <section class="our-works" Id="OurWorks">
                 <h2>НАШИ РАБОТЫ</h2>
-                <div>
-                    <ul class="our-works-ul">
-                        <li>
+                <div class="flats">
+                    <div class="flat">
+                        <div class="flat-img">
                             <img src="IMAGES/Rectangle131.png" alt="Уютная дизайн-студия">
-                            <div class="our-work-hover">
-                                <h2>Квартира-студия 30 кв.м.</h2>
-                                <p>
-                                    В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
-                                    на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.                                    
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="IMAGES/Rectangle134.png" alt="Двухуровневая квартира" 
-                            width="692">
-                        </li>
-                        <li>
+                        </div>
+                        <div class="flat-info">
+                            <h3>Квартира-студия<br>30 кв.м.</h3>
+                            <p> В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.                                    
+                            </p>
+                        </div>
+                    </div>      
+                    <div class="flat">
+                        <div class="flat-img">
+                            <img src="IMAGES/Rectangle134.png" alt="Двухуровневая квартира">
+                        </div>            
+                        <div class="flat-info">
+                            <h3>Двухуровневая квартира<br>120 кв.м.</h3>
+                            <p> В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.                                    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flat">
+                        <div class="flat-img">
+                            <img src="IMAGES/Rectangle132.png" alt="Life likes a camera...">
+                        </div>    
+                        <div class="flat-info">
+                            <h3>Фотостудия 65 кв.м.</h3>
+                            <p> В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.                                    
+                            </p>
+                        </div>
+                    </div>        
+                    <div class="flat">
+                        <div class="flat-img">
                             <img src="IMAGES/Rectangle133.png" alt="Ванная комната в бежевых тонах">
-                        </li>
-                        <li>
-                            <img src="IMAGES/Rectangle132.png" alt="Life likes a camera..." width="692">
-                         </li>        
-                    </ul>
+                        </div>   
+                        <div class="flat-info">
+                            <h3>Современный санузел<br>14 кв.м.</h3>
+                            <p> В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.                                    
+                            </p>
+                        </div>
+                    </div>    
                 </div>
                 <div class="our-works-more">
                     <a class="header-nav-a" href="#">Смотреть еще <img src="IMAGES/Arrow 3.png" alt="->"></a>
                 </div>    
             </section>
-            <section class="our-team">
+            <section class="our-team" Id="OurTeam">
                 <h2>КОМАНДА</h2>
                 <div class="div-our-team">
                     <div class="div-out-team-1">
@@ -139,7 +164,7 @@
                             чтобы вам понравилось.</p>
                     </div>
                 </div>
-                <h2>КАК МЫ РАБОТАЕМ</h2>
+                <h2 Id="OurTeamSteps">КАК МЫ РАБОТАЕМ</h2>
                 <div class="our-team-steps">
                     <div>
                         <div><span>1</span></div>
@@ -164,7 +189,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section class="reviews" Id="Reviews">
                 <div class="title-reviews">
                   <h2>ОТЗЫВЫ</h2>
                 </div>
@@ -194,7 +219,7 @@
                   </button>
                 </div>
             </section>     
-            <section class="callback">
+            <section class="callback" Id="CallBack">
                 <div class="callback-form-map">
                     <div class="callback-form">
                         <h1>Оставить заявку</h1>
