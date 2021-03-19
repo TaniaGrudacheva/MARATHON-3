@@ -511,8 +511,11 @@ input::placeholder {
 
 input:hover::placeholder {
   color: #533738;
-
   transition: color .2s linear;
+}
+
+.callback-form .button{
+  color: #533738;
 }
 
 /*end section CALLBACK */
